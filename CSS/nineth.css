@@ -1,0 +1,139 @@
+/* =========================================
+   SOCIAL RESPONSIBILITY
+========================================= */
+
+.social-responsibility {
+    width: 100%;
+    min-height: 708px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 245px 358px 25px 80px;
+
+    background: linear-gradient(
+        to bottom,
+        #105453 0px,
+        #105453 603px,
+        #ead69e 603px,
+        #ead69e 628px,
+        #fff 628px
+    );
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.social-title {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #23716f;
+}
+
+.social-title h2 {
+    color: #00a6aa;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.social-title h2 span {
+    color: #00c5ca;
+
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.social-image {
+    grid-column: 1;
+    grid-row: 2 / 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 32px;
+
+    z-index: 2;
+}
+
+.social-image img {
+    width: 400px;
+    height: 350px;
+
+    object-fit: cover;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .social-responsibility {
+        grid-template-rows: 200px 280px 20px 60px;
+
+        min-height: 560px;
+
+        background: linear-gradient(
+            to bottom,
+            #105453 0px,
+            #105453 480px,
+            #ead69e 480px,
+            #ead69e 500px,
+            #fff 500px
+        );
+    }
+
+    .social-title h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .social-title h2 span {
+        font-size: 20px;
+    }
+
+    .social-image {
+        padding-top: 25px;
+    }
+
+    .social-image img {
+        width: 85%;
+        max-width: 400px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .social-title h2 {
+        font-size: 25px;
+    }
+
+    .social-title h2 span {
+        font-size: 17px;
+    }
+
+    .social-image img {
+        width: 90%;
+        height: 250px;
+    }
+}

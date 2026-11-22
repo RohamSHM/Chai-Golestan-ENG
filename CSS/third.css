@@ -1,0 +1,91 @@
+.rice-banner {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 612px 25px;
+}
+
+.rice-banner-image {
+    grid-row: 1;
+    grid-column: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../Images/Section3/image2-new-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.tea-banner-image{
+    background-image: url("../Images/Section3/image3-new.jpg");
+}
+.Pistachios-banner-image{
+    background-image: url("../Images/Section3/image4-new.jpg");
+}
+
+.rice-banner::after {
+    content: "";
+
+    grid-row: 2;
+    grid-column: 1;
+
+    width: 100%;
+    background-color: #e8d49b;
+}
+
+.rice-title-container {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    margin-bottom: -45px;
+    margin-left: -200px;
+    z-index: 2;
+}
+
+.rice-title {
+    width: 370px;
+    height: 120px;
+
+    background-color: #ed1c24;
+
+    display: flex;
+    align-items: center;
+    
+
+    padding: 25px;
+}
+
+.rice-title h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .rice-banner {
+        grid-template-rows: 400px 20px;
+    }
+
+    .rice-title {
+        width: 280px;
+        height: 110px;
+        padding: 20px;
+    }
+
+    .rice-title h2 {
+        font-size: 35px;
+    }
+
+    .rice-title-container {
+        margin-bottom: -35px;
+    }
+}

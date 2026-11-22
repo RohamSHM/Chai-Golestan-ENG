@@ -1,0 +1,118 @@
+/* =========================================
+   GOLESTAN TEA
+========================================= */
+
+.golestan-tea {
+    width: 100%;
+    min-height: 400px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 55px;
+}
+
+.golestan-tea-content {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Title */
+
+.golestan-tea-content h2 {
+    color: #ed1c24;
+    font-size: 27px;
+    font-weight: 300;
+
+    margin-bottom: 22px;
+}
+
+
+/* Description */
+
+.golestan-tea-content p {
+    width: 100%;
+
+    color: #888;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+
+/* Read More */
+
+.tea-read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #888;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    padding: 14px 30px;
+    font-size: 16px;
+
+    margin-top: 50px;
+
+    transition: 0.3s;
+}
+
+.tea-read-more:hover {
+    background-color: #ed1c24;
+    color: white;
+    border-color: #ed1c24;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .golestan-tea-content {
+        width: 85%;
+    }
+
+    .golestan-tea-content p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .golestan-tea {
+        min-height: auto;
+        padding: 40px 0 60px;
+    }
+
+    .golestan-tea-content {
+        width: 90%;
+    }
+
+    .golestan-tea-content h2 {
+        font-size: 25px;
+    }
+
+    .golestan-tea-content p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .tea-read-more {
+        margin-top: 35px;
+    }
+}

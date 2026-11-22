@@ -1,0 +1,219 @@
+/* =========================================
+   CHARITABLE ACTIVITIES
+========================================= */
+
+.charity-section {
+    width: 100%;
+    min-height: 430px;
+
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 40px;
+}
+
+.charity-content {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Title */
+
+.charity-content h2 {
+    color: #ed1c24;
+
+    font-size: 27px;
+    font-weight: 300;
+
+    margin-bottom: 22px;
+}
+
+
+/* Description */
+
+.charity-content p {
+    width: 100%;
+
+    color: #888;
+
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+
+/* Read More */
+
+.charity-read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #888;
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    padding: 14px 30px;
+
+    font-size: 16px;
+
+    margin-top: 50px;
+
+    transition: 0.3s;
+}
+
+.charity-read-more:hover {
+    background-color: #ed1c24;
+    color: white;
+    border-color: #ed1c24;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.main-footer {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 119px 31px;
+}
+
+
+/* Social Links Background */
+
+.social-links {
+    background-color: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Social Icons */
+
+.social-icon {
+    width: 58px;
+    height: 58px;
+
+    background-color: #bcbcbc;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ed1c24;
+}
+
+.social-icon.instagram {
+    font-size: 43px;
+}
+
+.social-icon.telegram {
+    font-size: 30px;
+}
+
+.social-icon.gl {
+    font-size: 21px;
+}
+
+
+/* Bottom Red Bar */
+
+.footer-bottom {
+    width: 100%;
+    background-color: #ed1c24;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .charity-content {
+        width: 85%;
+    }
+
+    .charity-content p {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .charity-section {
+        min-height: auto;
+        padding: 40px 0 60px;
+    }
+
+    .charity-content {
+        width: 90%;
+    }
+
+    .charity-content h2 {
+        font-size: 25px;
+    }
+
+    .charity-content p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .charity-read-more {
+        margin-top: 35px;
+    }
+
+    .main-footer {
+        grid-template-rows: 100px 25px;
+    }
+
+    .social-links {
+        gap: 7px;
+    }
+
+    .social-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    .social-icon.instagram {
+        font-size: 32px;
+    }
+
+    .social-icon.gl {
+        font-size: 15px;
+    }
+
+}
